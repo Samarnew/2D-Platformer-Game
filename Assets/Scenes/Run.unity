@@ -334,13 +334,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3948786726001066132, guid: d2f800cf8217341409b2ad64037dbb6a,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3948786726001066132, guid: d2f800cf8217341409b2ad64037dbb6a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3948786726001066132, guid: d2f800cf8217341409b2ad64037dbb6a,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.18
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 3948786726001066132, guid: d2f800cf8217341409b2ad64037dbb6a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.95
+      value: 1.49
       objectReference: {fileID: 0}
     - target: {fileID: 3948786726001066132, guid: d2f800cf8217341409b2ad64037dbb6a,
         type: 3}
@@ -381,6 +391,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000970700145234515, guid: d2f800cf8217341409b2ad64037dbb6a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f800cf8217341409b2ad64037dbb6a, type: 3}
@@ -429,7 +444,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &5313802903025500619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,8 +458,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 5313802903025500617}
---- !u!61 &5313802903025500621
-BoxCollider2D:
+  isCrouching: 1
+--- !u!70 &5313802903025500621
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -456,16 +472,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0037173033, y: 0.9913275}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.42, y: 0.1}
-    oldSize: {x: 3.7534883, y: 2.8325582}
-    newSize: {x: 3.7534883, y: 2.8325582}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5173993, y: 2.0960908}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.01945877, y: 0.97075796}
+  m_Size: {x: 0.6243949, y: 2.1308374}
+  m_Direction: 0
